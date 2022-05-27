@@ -1,7 +1,7 @@
 node {
   stage('SCM')
   {
-    https://github.com/durgavinaym/maven1.git
+    git 'https://github.com/durgavinaym/maven1.git'
   }
   stage('SonarQube Analysis')
   {
@@ -12,3 +12,4 @@ node {
     }
   }
 }
+  
