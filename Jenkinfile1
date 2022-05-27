@@ -1,4 +1,8 @@
 node {
+ environment
+    {
+        PATH = "$PATH:/usr/share/apache-maven-3.6.3/"
+    }
   stage('SCM')
   {
     git 'https://github.com/durgavinaym/maven1.git'
